@@ -9,14 +9,10 @@ const products = [
 ];
 
 const getAllPropValues = function(arr, prop) {
-  // твой код
-    
     const productsArr = [];
 
     for (let product of arr) {
-       
         if (product[prop] === undefined) continue;
-        
         productsArr.push(product[prop])
     }
     return productsArr;
@@ -34,13 +30,4 @@ console.log(getAllPropValues(products, 'category')); // []
 
 
 
-     const propsArray = [];
-
-    for (let product of arr) {
-        for (let key in product) {
-            if (key === prop) {
-                propsArray.push(product[key])
-            }
-        }
-    }
-    return propsArray;
+ 
